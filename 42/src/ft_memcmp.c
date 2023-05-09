@@ -6,17 +6,9 @@
 /*   By: daoliver <daoliver@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/01 16:40:10 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/04 14:34:15 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/05/09 14:21:12 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-//Compare firsts n bytes of area of memory str1 & str2
-//str1 first pointer to a block of memory.
-//str2 second pointer to a block of memory.
-//n (Number of bytes to compare)
-//RETURN VALUES
-//v < 0 str1 in minor to str2
-//v > 0 str1 is mayor to str2
-//v = 0 str1 is equal to str2
 
 #include "libft.h"
 
@@ -24,7 +16,7 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {
 	const unsigned char	*s1;
 	const unsigned char	*s2;
-	size_t	i;
+	size_t				i;
 
 	s1 = str1;
 	s2 = str2;

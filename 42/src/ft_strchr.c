@@ -6,11 +6,24 @@
 /*   By: daoliver <daoliver@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/01 16:37:34 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/01 16:37:56 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/05/09 14:34:25 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
+char	*ft_strchr(const char *s, int c)
+{
+	int	i;
 
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == (char)c)
+			return ((char *)(s + i));
+		i++;
+	}
+	if (s[i] == (char)c)
+		return ((char *)(s + i));
+	return (0);
+}

@@ -6,7 +6,7 @@
 #    By: daoliver <daoliver@student.42barcelona.co  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/28 18:39:21 by daoliver          #+#    #+#              #
-#    Updated: 2023/05/05 16:03:47 by daoliver         ###   ########.fr        #
+#    Updated: 2023/05/09 17:34:23 by daoliver         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,8 +16,9 @@ CFLAGS:= -Wall -Wextra -Werror -I .
 NAME:= libft.a
 
 ## Sources of Functions
-SRC:= src/ft_isalnum.c src/ft_isalpha.c src/ft_isascii.c src/ft_isdigit.c \
-	  src/ft_isprint.c src/ft_memchr.c src/ft_memcmp.c src/ft_strlen.c \
+SRC:= src/ft_bzero.c src/ft_isalnum.c src/ft_isalpha.c src/ft_isascii.c src/ft_isdigit.c \
+	  src/ft_isprint.c src/ft_memchr.c src/ft_memcmp.c src/ft_strlcat.c src/ft_strlen.c \
+	  src/ft_memcpy.c src/ft_memmove.c src/ft_memset.c \
 
 OBJS:= $(SRC:.c=.o)
 $(info $(SRC))
