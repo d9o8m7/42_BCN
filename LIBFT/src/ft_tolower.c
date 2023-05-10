@@ -1,16 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daoliver <daoliver@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: daoliver <daoliver@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/01 16:38:50 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/01 16:39:18 by daoliver         ###   ########.fr       */
+/*   Created: 2023/05/10 14:14:50 by daoliver          #+#    #+#             */
+/*   Updated: 2023/05/10 14:22:39 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-
+int	ft_tolower(int c)
+{
+	if ((c >= 'A' && c <= 'Z'))
+		return (c += 32);
+	else
+		return (c);
+}
