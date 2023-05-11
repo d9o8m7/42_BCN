@@ -1,14 +1,4 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: daoliver <daoliver@student.42barcelona.co  +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/04/28 18:39:21 by daoliver          #+#    #+#              #
-#    Updated: 2023/05/11 12:17:40 by daoliver         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
+## MAAKEFILE to create the Library "LIBFT"
 
 ## Name Output File, Compiler & Flags
 CC:= gcc
