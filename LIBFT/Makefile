@@ -6,7 +6,7 @@
 #    By: daoliver <daoliver@student.42barcelona.co  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/28 18:39:21 by daoliver          #+#    #+#              #
-#    Updated: 2023/05/10 14:25:37 by daoliver         ###   ########.fr        #
+#    Updated: 2023/05/11 12:17:40 by daoliver         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 		ar rc $(NAME) $(OBJS)
 
-## 
+## Pattern rule for invoking flag, prerequisite and target
 %.o: %.c libft.h Makefile
 		$(CC) $(CFLAGS) -c $< -o $@
 
