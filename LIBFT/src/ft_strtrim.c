@@ -1,21 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daoliver <daoliver@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/10 14:24:14 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/12 14:44:59 by daoliver         ###   ########.fr       */
+/*   Created: 2023/05/12 14:57:07 by daoliver          #+#    #+#             */
+/*   Updated: 2023/05/12 15:13:36 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+char *ft_strtrim(char const *s1, char const *set)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c -= 32);
-	else
-		return (c);
+	size_t	len;
+
+	if (!s1 || !set)
+		return (NULL);
+	while (ft_strshr(set, *s1) && *s1 != '\0')
+		s1++;
+		len = ft_strlen((char *)s1);
+	while (ft_strchr(set, s1[len]) && len != 0)
+			len --;
+	return (ft_substr((char *)s1, 0, len + 1));
 }

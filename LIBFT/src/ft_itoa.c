@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daoliver <daoliver@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: daoliver <daoliver@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/02 11:11:41 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/12 16:10:34 by daoliver         ###   ########.fr       */
+/*   Created: 2023/05/12 15:02:43 by daoliver          #+#    #+#             */
+/*   Updated: 2023/05/12 15:03:17 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+char *ft_itoa(int n)
 {
 
 }

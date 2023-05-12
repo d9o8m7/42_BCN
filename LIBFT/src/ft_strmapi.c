@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daoliver <daoliver@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: daoliver <daoliver@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/02 11:11:41 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/12 16:10:34 by daoliver         ###   ########.fr       */
+/*   Created: 2023/05/12 15:03:31 by daoliver          #+#    #+#             */
+/*   Updated: 2023/05/12 15:04:45 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 
 }
