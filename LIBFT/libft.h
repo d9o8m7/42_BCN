@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/29 18:20:30 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/12 16:19:17 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/05/15 16:06:08 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ int		ft_isdigit(int c);
 int		ft_isprint(int c);
 //char	*ft_itoa(int n);
 //
-int		ft_memcmp(const void *str1, const void *str2, size_t n);
 void	*ft_memchr(const void *str, int c, size_t n);
+int		ft_memcmp(const void *str1, const void *str2, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memset(void *d, int c, size_t len);
@@ -38,13 +38,13 @@ char	*ft_strchr(const char *s, int c);
 //ft_striteri()
 //ft_strjoin()
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
-//ft_strlcpy()
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 int		ft_strlen(const char *s);
 //char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-//ft_strncmp()
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *h, const char *n, size_t len);
-//ft_strrchr()
-//ft_strtrim
+char	*ft_strrchr(const char *s, int c);
+//char	*ft_strtrim(char const *s1, char const *set);
 //char 	*ft_substr(char const s*, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
