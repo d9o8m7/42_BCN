@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 20:40:14 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/23 09:34:38 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/05/23 12:05:08 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strdup(const char *s1)
 {
 	char	*res;
 	size_t	len;
-	int	i;
+	int		i;
 
 	len = ft_strlen(s1) + 1;
 	if (!s1)
