@@ -33,3 +33,5 @@ fclean: clean
 
 ## Recompile everything from scratch
 re: fclean all
+
+.PHONY: all clean fclean re
