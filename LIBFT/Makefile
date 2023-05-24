@@ -21,7 +21,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 		ar rc $(NAME) $(OBJS)
 
-## 
+## Compiles .c file into its .o for creating the final library archive 
 %.o: %.c libft.h Makefile
 		$(CC) $(CFLAGS) -c $< -o $@
 
