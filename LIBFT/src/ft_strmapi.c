@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 09:16:35 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/26 14:06:58 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/06/09 15:23:12 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,16 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (str);
 }
 
+/*char	ft_transform(unsigned int index, char c)
+{
+	return (c + index);
+}
+
 int	main(void)
 {
-	char	str
+	char	str[] = "52 Barcelona";
+	char	*result = ft_strmapi(str, ft_transform);
+
+	printf("Cadena original: %s\n", str);
+	printf("Cadena transformada: %s\n", result);
+}*/
