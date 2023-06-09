@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 09:15:13 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/24 13:14:05 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/06/09 16:17:13 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,29 @@ static int	ft_len(int n)
 
 char	*ft_itoa(int n)
 {
-	char	*res;
+	char	*str;
 	int	len;
 	int	neg;
 
-	if (n = -2147483648)
+	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
 	neg = 0;
 	len = ft_len(n);
-
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (!str)
+		return (NULL);
+	str[len] = '\0';
+	if (n < 0)
+	{
+		neg = 1;
+		n = -n;
+	}
+	while (len --)
+	{
+		str[len] = n % 10 + '0';
+		n = n / 10;
+	}
+	if (neg)
+		str[0] = '-';
+	return (str);
 }
