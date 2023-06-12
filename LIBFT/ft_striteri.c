@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 09:17:53 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/26 13:46:57 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/06/12 19:29:58 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 
 	i = 0;
 	if (!s || !f)
-		return ;
+		return (NULL);
 	while (s[i])
 	{
 		f(i, &s[i]);
@@ -29,14 +29,18 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 /*void	printc(unsigned int i, char *c)
 {
 	c[0] = c[0] + i;
-	printf ("%c", c[0]);
+	//printf("%c", c[0]);
 }
 
 int	main(void)
 {
-	char	iteri_str[] = "52 Barcelona";
+	char	str[13] = "52 Barcelona";
+	char	p[0];
 
-	printf("Before ft_striteri: %s\n", iteri_str);
-	ft_striteri(iteri_str, printc);
-	printf("After ft_striteri: %s\n", iteri_str);
+	p[0] = 'A';
+
+	printc(1, p);
+	printf("Before ft_striteri: %c\n", p[0]);
+	ft_striteri(str, printc);
+	printf("After ft_striteri: %c\n", str);
 }*/
