@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: daoliver <daoliver@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/24 09:17:53 by daoliver          #+#    #+#             */
-/*   Updated: 2023/06/13 14:06:38 by daoliver         ###   ########.fr       */
+/*   Created: 2023/06/12 18:28:51 by daoliver          #+#    #+#             */
+/*   Updated: 2023/06/13 12:03:17 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (s[i])
@@ -36,7 +36,7 @@ int	main(void)
 	char	p[0];
 
 	p[0] = 'A';
-
+	
 	printc(1, p);
 	printf("Before ft_striteri: %c\n", p[0]);
 	ft_striteri(str, printc);

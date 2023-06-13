@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 14:57:07 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/24 14:05:28 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/06/13 15:26:50 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 /*int	main(void)
 {
-	char	str[] = "321576490852Barcelona987050777";
-	char	trim[] = "1234567890";
+	char	str[] = "3141926352Barcelona42";
+	char	trim[] = "123467890";
 	char	*res;
 
 	res = ft_strtrim(str, trim);
-	printf("\n\nOriginal: %s\nTrim: %s\nres: %s\n", str, trim, res);
+	printf("Original: %s\nTrim: %s\nres: %s\n", str, trim, res);
 }*/

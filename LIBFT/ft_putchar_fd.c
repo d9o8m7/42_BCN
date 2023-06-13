@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 15:00:14 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/26 12:47:35 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/06/13 14:21:18 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	write(fd, &c, sizeof(c));
+	write(fd, &c, sizeof(char));
 }
 
 /*int	main(void)

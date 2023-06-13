@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 11:11:02 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/23 12:00:10 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/05/24 13:35:27 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,4 @@ int	ft_atoi(const char *str)
 	//char string[20] = "--123";
 	numero = ft_atoi(string);
 	printf("\nnumero: %d\n", numero);
-}
-// numero: 52*/
+}*/
