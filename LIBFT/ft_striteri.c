@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 09:17:53 by daoliver          #+#    #+#             */
-/*   Updated: 2023/06/12 19:29:58 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/06/13 14:06:38 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	int	i;
 
 	i = 0;
-	if (!s || !f)
-		return (NULL);
 	while (s[i])
 	{
 		f(i, &s[i]);
