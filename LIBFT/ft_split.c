@@ -6,108 +6,88 @@
 /*   By: daoliver <daoliver@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 09:12:57 by daoliver          #+#    #+#             */
-/*   Updated: 2023/06/14 17:21:58 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/06/15 18:15:27 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Calculates the lenth of words delimited with a char
-int	ft_len_words(char const *s, char c)
+static	int	ft_word_counter(char const *s, char c)
 {
-	size_t	len;
+	int	i;
+	int	count;
 
-	len = 0;
-	while (s[len] != '\0' && s[len] != c)
-		len++;
-	return (len);
+	i = 0;
+	count = 0;
+	while (s[i])
+	{
+		while (s[i] && s[i] == c)
+			i++;
+		if (s[i])
+			count++;
+		while (s[i] && s[i] != c)
+			i++;
+	}
+	return (count);
 }
 
-// Counts number of words in string with a delimiter
-int	ft_count_words(char const *s, char c)
+static	int	ft_word_len(char const *s, char c)
 {
-	int	len_words;
 	int	i;
 
 	i = 0;
-	len_words = 0;
-	while (s[i])
-	{
-		while (s[i] == c)
-			i++;
-		if (s[i] != '\0')
-			len_words++;
-		while (s[i] != c && s[i])
-			i++;
-	}
-	return (len_words);
+	while (s[i] && s[i] != c)
+		i++;
+	return (i);
 }
 
-// Free's memory of the array
-char	**free_words(char **words)
+static	char	**ft_free(char **tab, int i)
 {
-	size_t	i;
-
-	i = 0;
-	while (words[i])
+	while (i >= 0)
 	{
-		free(words[i]);
-		i++;
+		free(tab[i]);
+		i--;
 	}
-	free(words);
+	free(tab);
 	return (NULL);
 }
 
-// Divides string in individual words using delimiter
-char	**ft_split(char const *s, char c)
+static	char	**ft_fill_tab(char const *s, char c, char **tab)
 {
-	char	**words;
 	int	i;
-	int	len_word;
+	int	j;
+	int	k;
 
-	words = (char **)ft_calloc((ft_count_words(s, c)) + 1, sizeof(*words));
-	if (!word)
-		return (NULL);
 	i = 0;
-	while (*s)
+	j = 0;
+	while (s[i])
 	{
-		while (*s == c)
-			s++;
-		if (*s)
+		while (s[i] && s[i] == c)
+			i++;
+		if (s[i])
 		{
-			len_word = ft_len_words(s, c);
-			words[i] = (char *)ft_calloc((len_word + 1), sizeof(char));
-			if (!words[i])
-				return (free_words(word));
-			ft_memcpy(words[i], s, (size_t)len_word);
-			s += len_word;
+			k = 0;
+			tab[j] = malloc(sizeof(char) * (ft_word_len(s + i, c) + 1));
+			if (!tab[j])
+				return (ft_free(tab, j));
+			while (s[i] && s[i] != c)
+				tab[j][k++] = s[i++];
+			tab[j++][k] = '\0';
 		}
 	}
-	return (words);
+	tab[j] = NULL;
+	return (tab);
 }
 
-int	main(void)
+char	**ft_split(char const *s, char c)
 {
-	char	str[] = "52 BCN is better";
-	char	ch;
-	char	**res;
-	ch = ' ';
+	char	**tab;
 
-	res = ft_split(str, ch);
-	printf("main: %c, ascii: %i\n", ch, ch);
-
-	int	j;
-	int	i;
-	i = 0;
-	while (i < 5)
-	{
-		j = 0;
-		while (*(res[i] + j) != '\0')
-		{
-			printf("%c", *(res[i] + j));
-			j++;
-		}
-		printf("\n");
-		i++;
-	}
+	if (!s)
+		return (NULL);
+	tab = malloc(sizeof(char *) * (ft_word_counter(s, c) + 1));
+	if (tab == NULL)
+		return (NULL);
+	tab = ft_fill_tab(s, c, tab);
+	return (tab);
 }
