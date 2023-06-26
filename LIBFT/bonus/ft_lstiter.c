@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 09:29:33 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/24 09:32:09 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/06/26 16:07:59 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,30 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-
+	if (!lst || !f)
+		return (NULL);
+	while (lst)
+	{
+		f (lst -> content);
+		lst = lst -> next;
+	}
 }
+
+/*void	print(void *c)
+{
+	printf("%s\n", (char *)c);
+}
+
+int	main(void)
+{
+	t_list	*a;
+	t_list	*b;
+	t_list	*c;
+	a = ft_lstnew("52 Barcelona");
+	b = ft_lstnew("1337");
+	c = ft_lstnew("HIVE");
+	ft_lstadd_back(&a, b);
+	ft_lstadd_back(&a, c);
+	ft_lstiter(a, print);
+	return (0);
+}*/
