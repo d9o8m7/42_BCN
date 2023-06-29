@@ -1,9 +1,10 @@
 
 ## Name Output File, Compiler & Flags
+NAME:= libft.a
+HEADER:= libft.h
 CC:= gcc
 CFLAGS:= -Wall -Wextra -Werror -I .
 RM:= rm -f
-NAME:= libft.a
 
 ## Sources of Functions
 SRC:= ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
