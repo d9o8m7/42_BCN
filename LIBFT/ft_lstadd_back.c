@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 09:25:03 by daoliver          #+#    #+#             */
-/*   Updated: 2023/06/26 15:11:03 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/06/29 15:33:49 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,15 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list	*last;
+	t_list	*node;
 
-	if (!lst || !new)
-		return ;
 	if (!*lst)
-			*lst = new;
-	else
 	{
-		last = ft_lstlast(*lst);
-		last -> next = new;
+		*lst = new;
+		return ;
 	}
+	node = ft_lstlast(*lst);
+	node -> next = new;
 }
 
 /*void	v_list(t_list *lst)
