@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/01 16:26:11 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/08 11:51:19 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/06/30 18:04:36 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,11 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
+
+/*int	main(void)
+{
+	char n;
+	printf("Write a char 2 check if is Alphanumeric:\n");
+	scanf("%c", &n);
+	printf("The Result of '%c' is: &d\n", n, ft_isalnum(n));
+}*/
