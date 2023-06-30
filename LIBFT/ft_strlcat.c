@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/01 16:33:21 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/24 13:36:06 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/06/30 19:04:40 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,15 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 			dst_len = size;
 	return (dst_len + src_len);
 }
+
+/*int	main(void)
+{
+	char	src[] = "BCN";
+	char	dst[] = "52 ";
+	size_t	n;
+	int		r;
+
+	n = 6;
+	r = ft_strlcat(dst, src, n);
+	printf("src: %s\n dst: %s\n size: %zu\n return: %d\n", src, dst, n, r);
+}*/
