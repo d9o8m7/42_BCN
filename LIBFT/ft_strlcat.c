@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/01 16:33:21 by daoliver          #+#    #+#             */
-/*   Updated: 2023/06/30 19:04:40 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/07/14 18:36:50 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dst[j] = 0;
 	}
 	if (dst_len >= size)
-			dst_len = size;
+		dst_len = size;
 	return (dst_len + src_len);
 }
 

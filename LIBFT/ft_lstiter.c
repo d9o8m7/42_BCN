@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 09:29:33 by daoliver          #+#    #+#             */
-/*   Updated: 2023/06/26 16:07:59 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/07/14 18:33:06 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!lst || !f)
-		return (NULL);
+		return ;
 	while (lst)
 	{
 		f (lst -> content);

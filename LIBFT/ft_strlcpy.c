@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/01 16:32:42 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/15 15:54:55 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/07/14 18:37:05 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		(dst[i] = 0);
 	}
 	while (src[i])
-			i++;
+		i++;
 	return (i);
 }

@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/01 16:40:10 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/09 14:21:12 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/07/14 18:38:33 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n)
 	{
 		if (s1[i] != s2[i])
 			return (s1[i] - s2[i]);
-			i++;
+		i++;
 	}
 	return (0);
 }

@@ -23,7 +23,7 @@ OBJSBONUS = $(SRCBONUS:.c=.o)
 $(info $(SRC)$(SRCBONUS))
 
 ## Compiles everything in one comand
-all: $(NAME)
+all: $(OBJS) $(NAME)
 
 ## Create a static library archive file (.a) from compiled object files
 $(NAME): $(OBJS)
@@ -35,7 +35,7 @@ bonus: $(OBJS) $(OBJSBONUS)
 		@echo bonus compliled
 
 ## Compiles .c file into its .o for creating the final library archive 
-%.o: %.c libft.h Makefile
+%.o: %.c
 		$(CC) $(CFLAGS) -c $< -o $@
 
 ## Cleaning up object files

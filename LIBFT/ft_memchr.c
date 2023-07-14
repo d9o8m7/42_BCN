@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 11:11:01 by daoliver          #+#    #+#             */
-/*   Updated: 2023/05/02 15:08:25 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/07/14 18:38:46 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memchr(const void *str, int c, size_t n)
 			return (sr);
 		else
 			sr++;
-			n--;
+		n--;
 	}
 	return (NULL);
 }

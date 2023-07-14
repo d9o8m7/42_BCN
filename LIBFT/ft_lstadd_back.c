@@ -6,7 +6,7 @@
 /*   By: daoliver <daoliver@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 09:25:03 by daoliver          #+#    #+#             */
-/*   Updated: 2023/06/30 17:50:19 by daoliver         ###   ########.fr       */
+/*   Updated: 2023/07/14 18:39:45 by daoliver         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	}
 	else
 	{
-	node = ft_lstlast(*lst);
-	node -> next = new;
+		node = ft_lstlast(*lst);
+		node -> next = new;
 	}
 }
 
