@@ -34,7 +34,7 @@ bonus: $(OBJS) $(OBJSBONUS)
 		@touch bonus
 		@echo bonus compliled
 
-## Compiles .c file into its .o for creating the final library archive 
+## Compiling Rules .c file into its .o for the final library archive 
 %.o: %.c
 		$(CC) $(CFLAGS) -c $< -o $@
 
